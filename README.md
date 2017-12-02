@@ -1,2 +1,1 @@
-# theta
-Connection statistics for your GMod server.
+theta goes here
