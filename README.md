@@ -4,7 +4,7 @@
 
 ## a GMod connection statistics loading screen thing idfk
 
-===
+---
 
 ## Installation:
 
