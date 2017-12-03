@@ -1,4 +1,4 @@
-![as seen on GModstore.](https://gmodstore.com/scripts/view/2806)
+as seen on [GModstore](https://gmodstore.com/scripts/view/2806).
 
 ## theta
 
