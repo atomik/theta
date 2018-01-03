@@ -1,5 +1,6 @@
-src/
-vendor/
+src/_custom.sass
+src/index.js
+src/main.sass
 node_modules/
 composer.json
 composer.lock
