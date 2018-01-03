@@ -1,0 +1,1 @@
+slim/webpack version here
