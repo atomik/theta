@@ -2,6 +2,6 @@
 
 {% block body %}
 
-we're getting somewhere...
+{{ "now"|date('c') }}
 
 {% endblock %}
