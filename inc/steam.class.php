@@ -12,14 +12,14 @@ class steam extends LightOpenID {
 			try {
 				$openid = new LightOpenID($_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 				if(!$openid->mode) {
-					$openid->identity = 'http://steamcommunity.com/openid';
+					$openid->identity = 'https://steamcommunity.com/openid';
 					header('Location: ' . $openid->authUrl());
 				} elseif ($openid->mode == 'cancel') {
 					echo 'Canceled auth.';
 				} else {
 					if($openid->validate()) {
 						$id = $openid->identity;
-						$url = "/^http:\/\/steamcommunity\.com\/openid\/id\/(7[0-9]{15,25}+)$/";
+						$url = "/^https?:\/\/steamcommunity\.com\/openid\/id\/(7[0-9]{15,25}+)$/";
 						preg_match($url, $id, $match);
 						$_SESSION['steam'] = $match[1];
 						header('Location: '.str_replace("?login","",$_GET['openid_return_to']));
